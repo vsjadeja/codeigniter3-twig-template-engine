@@ -10,8 +10,7 @@ class Welcome extends CI_Controller {
     }
 
     public function index() {
-        $this->session->set_userdata('user', 'Virendra Jadeja');
-        $this->load->view('welcome.html.twig');
+        $this->twig->parse('welcome.html.twig', array('name' => 'Virendra Jadeja'));
     }
 
 }
