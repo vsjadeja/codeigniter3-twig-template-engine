@@ -5,5 +5,5 @@ Integration of Twig template engine with codeigniter3
 ```
 $this->load->library('twig');
 $data = array('name'=>'Virendra Jadeja', 'email'=>'virendrajadeja84@gmail.com');
-$this->load->view('welcome.html.twig', $data);
+$this->twig->parse('welcome.html.twig', $data);
 ```
